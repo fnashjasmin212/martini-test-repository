@@ -19,5 +19,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: false
-          tags: new:version1
+          tags: mytag:latest
           file: ./docker/Dockerfile
