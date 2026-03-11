@@ -4,7 +4,6 @@ on:
     branches:
       - main
       - feature/*
-      - new
 jobs:
   build-docker-image:
     name: Build Docker Image
@@ -20,5 +19,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: false
-          tags: ''
+          tags: mytag:latest
           file: ./docker/Dockerfile
